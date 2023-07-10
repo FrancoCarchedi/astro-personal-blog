@@ -1,8 +1,8 @@
 ---
 import '../styles/global.css';
 import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
 
+const pageTitle = "Blog";
 ---
 <html lang="es">
 	<head>
@@ -13,9 +13,16 @@ import Footer from '../components/Footer.astro';
 		<title>Franco Carchedi</title>
 	</head>
 	<body>
-		<h1>Inicio</h1>
+    <h1>Blog</h1>
 
-		<Navigation/>
-		<Footer/>
-	</body>
+    <Navigation/>
+
+    <h1>Mi blog de Astro aprendizaje</h1>
+    <p>Aquí es donde voy a postear sobre mi viaje de aprendizaje Astro.</p>
+    <ul>
+      <li><a href="/posts/post-1/">Post 1</a></li>
+      <li><a href="/posts/post-2/">Post 2</a></li>
+      <li><a href="/posts/post-3/">Post 3</a></li>
+    </ul>
+  </body>
 </html>
