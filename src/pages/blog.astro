@@ -1,6 +1,6 @@
 ---
+import Header from '../components/Header.astro';
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
 
 const pageTitle = "Blog";
 ---
@@ -13,9 +13,9 @@ const pageTitle = "Blog";
 		<title>Franco Carchedi</title>
 	</head>
 	<body>
-    <h1>Blog</h1>
+    <h1>{pageTitle}</h1>
 
-    <Navigation/>
+    <Header/>
 
     <h1>Mi blog de Astro aprendizaje</h1>
     <p>Aquí es donde voy a postear sobre mi viaje de aprendizaje Astro.</p>
